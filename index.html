@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Game</title>
+</head>
+
+<body>
+
+    <section class="card">
+        <h1 class="title">Start game</h1>
+        <a href="#card2" class="start" id="start">Начать игру</a>
+    </section>
+    
+    <section class="card" id="card2">
+        <h2 class="title sub-title">Выберете время</h2>
+        <ul class="time-list">
+            <li class="time-list__item">
+                <button class="time-list__item button">10 сек</button>
+            </li>
+            <li class="time-list__item">
+                <button class="time-list__item button">15 сек</button>
+            </li>
+            <li class="time-list__item">
+                <button class="time-list__item button">20 сек</button>
+            </li>
+            <li class="time-list__item">
+                <button class="time-list__item button">30 сек</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2 class="title">Осталось:<span id="time">00:00</span></h2>
+        <div class="board" id="board"></div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <p class="score">Ваш счет: <span id="score">20</span></p>
+            <div class="modal__controls">
+                <button class="modal__btn button">Начать заново</button>
+                <button class="modal__btn button">Hа главную</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle">
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
